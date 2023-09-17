@@ -9,8 +9,16 @@
   <body>
     <h1>Atlantica</h1>
     <p>The city of ocean dreams!</p>
-    <nav></nav>
-    <section>
+    <nav>
+        <a href="#descr" method="get">Description |</a>
+        <a href="#attract">Attractions |</a>
+        <a href="#stats">Statistics |</a>
+        <a href="#feedback">Feedback |</a>
+        <a href="#quotes">Quotes |</a>
+        <a href="#contact">Contacts</a>
+
+    </nav>
+    <section id="descr">
       <h2>Discover Atlantica</h2>
       <img
         src="https://images.unsplash.com/photo-1519293978507-9c6bb9f82eda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
@@ -21,7 +29,7 @@
         offering dreams a canvas as vast as the sea.
       </p>
     </section>
-    <section>
+    <section id="attract">
         <h2>Attractions</h2>
         <h3>Main Attractions</h3>
         <ol>
@@ -40,7 +48,7 @@
             <li>Mermaid Cove</li>
         </ul>
     </section>
-    <section>
+    <section id="stats">
         <h2>City Statistics</h2>
         <table>
             <tr>
@@ -58,7 +66,7 @@
 
         </table>
     </section>
-    <section>
+    <section id="feedback">
         <h2>Feedback</h2>
         <form method="get" action=" ">
             <label for="uname">Name: </label>
@@ -66,7 +74,7 @@
             <label for="email">Email: </label>
             <input type="email" id="email" name="email_id"><br>
             <label for="age">Age: </label>
-            <input type="number" id="age" name="userage"><br>
+            <input type="number" id="age" name="userage" max="100"><br>
             <label for="fav">Favourite Attraction: </label>
            <select name="favourite" id="fav">
             <option value="Atlantic">Atlantic Tower</option>
@@ -82,10 +90,20 @@
             <button type="submit">Submit</button>
         </form>
     </section>
-    <section>
+    <section id="quotes">
         <h2>What Citizens Say</h2>
         <p>"This is the best city: Nishi</p>
-        <span>"You should be here: Bubble"</span>
+        <span>"You should be here: Bubble"</span><br><br>
     </section>
+    <section id="contact">
+        <address>
+           <p>Atlantica Tourism Office<br>100 Ocean Drive Atlantica <br>Email: <a href="mailto:nishi@gmail.com">nishi@gmail.com</a><br>
+ Phone: 123456789
+           </p>
+        </address>
+    </section>
+    <footer>
+        <p> 2023 Atlantica Tourism, Dive into Dreams!</p>
+    </footer>
   </body>
 </html>
